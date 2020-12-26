@@ -6,7 +6,7 @@
 /*   By: junsekim <junsekim@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/25 19:51:28 by junsekim          #+#    #+#             */
-/*   Updated: 2020/12/27 00:53:13 by junsekim         ###   ########.fr       */
+/*   Updated: 2020/12/27 00:56:15 by junsekim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,7 +58,8 @@ void					ft_bzero(void *dest, t_size len);
 char					*ft_strjoin(char const *s1, char const *s2);
 int						ft_atoi(const char *nptr);
 char					*ft_strtrim(char const *s1, char const *set);
-char					*ft_strmapi(char const *s, char (*f)(t_size, char));
+char					*ft_strmapi(char const *s,
+						char (*f)(unsigned int, char));
 void					ft_lstclear(t_list **lst, void (*del)(void*));
 t_list					*ft_lstlast(t_list *lst);
 t_list					*ft_lstmap(t_list *lst,

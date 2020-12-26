@@ -6,14 +6,15 @@
 /*   By: junsekim <junsekim@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/26 14:05:45 by junsekim          #+#    #+#             */
-/*   Updated: 2020/12/27 00:52:56 by junsekim         ###   ########.fr       */
+/*   Updated: 2020/12/27 00:56:32 by junsekim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdlib.h>
 
-char	*ft_strmapi(char const *s, char (*f)(t_size, char))
+char	*ft_strmapi(char const *s,
+		char (*f)(unsigned int, char))
 {
 	t_size	len;
 	char	*ret;

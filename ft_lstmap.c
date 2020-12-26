@@ -6,7 +6,7 @@
 /*   By: junsekim <junsekim@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/26 21:56:25 by junsekim          #+#    #+#             */
-/*   Updated: 2020/12/27 00:50:01 by junsekim         ###   ########.fr       */
+/*   Updated: 2020/12/27 00:59:12 by junsekim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 		*elem = (t_list*)malloc(sizeof(t_list));
 		if (!(*elem))
 		{
-			ft_lstclear(ret, del);
+			ft_lstclear(&ret, del);
 			return (0);
 		}
 		(*elem)->content = f(lst->content);

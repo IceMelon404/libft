@@ -6,7 +6,7 @@
 /*   By: junsekim <junsekim@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/25 19:51:28 by junsekim          #+#    #+#             */
-/*   Updated: 2020/12/27 00:38:15 by junsekim         ###   ########.fr       */
+/*   Updated: 2020/12/27 00:39:54 by junsekim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,10 +15,10 @@
 
 typedef unsigned int	t_size;
 typedef unsigned char	t_byte;
-typedef struct			structs_list
+typedef struct			s_list
 {
 	void				*content;
-	struct structs_list	*next;
+	struct s_list		*next;
 }						t_list;
 
 int						ft_atoi(const char *nptr);

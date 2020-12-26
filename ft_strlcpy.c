@@ -6,7 +6,7 @@
 /*   By: junsekim <junsekim@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/26 13:02:52 by junsekim          #+#    #+#             */
-/*   Updated: 2020/12/27 00:11:34 by junsekim         ###   ########.fr       */
+/*   Updated: 2020/12/27 01:17:36 by junsekim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,10 @@ const char *restrict src, t_size dstsize)
 {
 	t_size	src_len;
 
-	if (dstsize == 0)
+	if (dstsize == 0 || !dest)
 		return (ft_strlen(src));
+	if (!src)
+		return (0);
 	src_len = 0;
 	while (dstsize > 1 && src[src_len])
 	{

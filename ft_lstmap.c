@@ -6,14 +6,14 @@
 /*   By: junsekim <junsekim@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/26 21:56:25 by junsekim          #+#    #+#             */
-/*   Updated: 2020/12/26 23:56:42 by junsekim         ###   ########.fr       */
+/*   Updated: 2020/12/27 00:26:58 by junsekim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdlib.h>
 
-t_list	*ft_lstmap(t_list *lst, void *(*f)(void *),void (*del)(void *))
+t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
 	t_list	**elem;
 	t_list	*ret;

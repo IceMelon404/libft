@@ -6,12 +6,13 @@
 /*   By: junsekim <junsekim@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/25 19:51:28 by junsekim          #+#    #+#             */
-/*   Updated: 2020/12/26 23:31:11 by junsekim         ###   ########.fr       */
+/*   Updated: 2020/12/27 00:29:12 by junsekim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
+
 typedef unsigned int	t_size;
 typedef unsigned char	t_byte;
 typedef struct			structs_list
@@ -35,7 +36,8 @@ t_size	ft_strlen(const char *str);
 char	**ft_split(char	const *s, char c);
 char	*ft_substr(char const *s, t_size start, t_size len);
 char	*ft_itoa(int n);
-t_size	ft_strlcpy(char *restrict dest, const char *restrict src, t_size dstsize);
+t_size	ft_strlcpy(char *restrict dest,
+ const char *restrict src, t_size dstsize);
 t_size	ft_strlcat(char *dest, const char *src, t_size size);
 char	*ft_strdup(const char *src);
 char	*ft_strchr(const char *s, int c);
@@ -64,4 +66,5 @@ void	ft_lstadd_front(t_list **lst, t_list *new);
 void	ft_lstdelone(t_list *lst, void (*del)(void*));
 void	ft_lstiter(t_list *lst, void (*f)(void *));
 t_list	*ft_lstnew(void *content);
+
 #endif

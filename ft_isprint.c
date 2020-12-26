@@ -6,11 +6,11 @@
 /*   By: junsekim <junsekim@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/25 21:11:13 by junsekim          #+#    #+#             */
-/*   Updated: 2020/12/26 12:05:55 by junsekim         ###   ########.fr       */
+/*   Updated: 2020/12/27 00:14:49 by junsekim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_isprint(int c)
+int	ft_isprint(int c)
 {
-	return (c >= ' ' && c <= '~');
+	return ((c >= ' ' && c <= '~') ? 1 : 0);
 }

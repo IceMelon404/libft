@@ -6,7 +6,7 @@
 /*   By: junsekim <junsekim@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/25 19:25:16 by junsekim          #+#    #+#             */
-/*   Updated: 2020/12/26 16:25:17 by junsekim         ###   ########.fr       */
+/*   Updated: 2020/12/27 00:14:06 by junsekim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@ char	*ft_strchr(const char *s, int c)
 	int		i;
 
 	i = 0;
-	while (i == 0 || s[i-1])
+	while (i == 0 || s[i - 1])
 	{
 		if (s[i] == (char)c)
 			return ((char*)&s[i]);

@@ -6,27 +6,27 @@
 /*   By: junsekim <junsekim@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/25 19:42:34 by junsekim          #+#    #+#             */
-/*   Updated: 2020/12/26 13:01:39 by junsekim         ###   ########.fr       */
+/*   Updated: 2020/12/27 00:10:03 by junsekim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static long long ft_max(long long a, long long b)
+static long long	ft_max(long long a, long long b)
 {
 	if (a < b)
 		return (b);
 	return (a);
 }
 
-static long long ft_min(long long a, long long b)
+static long long	ft_min(long long a, long long b)
 {
 	if (a < b)
 		return (a);
 	return (b);
 }
 
-char	*ft_strnstr(const char *big, const char *little, t_size len)
+char				*ft_strnstr(const char *big, const char *little, t_size len)
 {
 	t_size	g_limit;
 	t_size	len_limit;

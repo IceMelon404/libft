@@ -6,14 +6,14 @@
 /*   By: junsekim <junsekim@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/26 21:51:50 by junsekim          #+#    #+#             */
-/*   Updated: 2020/12/26 23:39:06 by junsekim         ###   ########.fr       */
+/*   Updated: 2020/12/27 00:12:12 by junsekim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdlib.h>
 
-void	ft_lstclear (t_list **lst, void (*del)(void*))
+void	ft_lstclear(t_list **lst, void (*del)(void*))
 {
 	t_list	*elem;
 	t_list	*tmp;

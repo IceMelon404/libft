@@ -6,14 +6,14 @@
 /*   By: junsekim <junsekim@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/26 19:07:03 by junsekim          #+#    #+#             */
-/*   Updated: 2020/12/26 23:32:12 by junsekim         ###   ########.fr       */
+/*   Updated: 2020/12/27 00:10:22 by junsekim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdlib.h>
 
-t_list *ft_lstnew(void *content)
+t_list	*ft_lstnew(void *content)
 {
 	t_list	*ret;
 

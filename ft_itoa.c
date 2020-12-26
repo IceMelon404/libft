@@ -6,7 +6,7 @@
 /*   By: junsekim <junsekim@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/26 13:24:56 by junsekim          #+#    #+#             */
-/*   Updated: 2020/12/26 15:21:45 by junsekim         ###   ########.fr       */
+/*   Updated: 2020/12/27 00:22:58 by junsekim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ static t_size	ft_abs(int n)
 	t_size ret;
 
 	if (n < 0)
-		ret = (t_size)-1*n;
+		ret = (t_size)-1 * n;
 	else
 		ret = (t_size)n;
 	return (ret);

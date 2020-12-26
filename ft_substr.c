@@ -6,7 +6,7 @@
 /*   By: junsekim <junsekim@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/26 13:16:03 by junsekim          #+#    #+#             */
-/*   Updated: 2020/12/26 17:24:41 by junsekim         ###   ########.fr       */
+/*   Updated: 2020/12/27 00:22:29 by junsekim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ char	*ft_substr(char const *s, t_size start, t_size len)
 {
 	char	*ret;
 
-	ret = (char*)malloc((len +1) * sizeof(char));
+	ret = (char*)malloc((len + 1) * sizeof(char));
 	if (!ret)
 		return (0);
 	if (ft_strlen(s) <= start)

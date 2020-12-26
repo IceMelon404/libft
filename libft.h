@@ -6,7 +6,7 @@
 /*   By: junsekim <junsekim@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/25 19:51:28 by junsekim          #+#    #+#             */
-/*   Updated: 2020/12/27 00:39:54 by junsekim         ###   ########.fr       */
+/*   Updated: 2020/12/27 00:41:17 by junsekim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,8 @@ int						ft_isdigit(int c);
 int						ft_isprint(int c);
 int						ft_isalnum(int c);
 char					*ft_strrchr(const char *s, int c);
-char					*ft_strnstr(const char *big, const char *little, t_size len);
+char					*ft_strnstr(const char *big,
+						const char *little, t_size len);
 int						ft_strncmp(const char *s1, const char *s2, t_size len);
 t_size					ft_strlen(const char *str);
 char					**ft_split(char	const *s, char c);
@@ -49,7 +50,8 @@ void					*ft_memmove(void *dest, const void *src, t_size len);
 void					*ft_memcpy(void *dest, const void *src, t_size len);
 int						ft_memcmp(const void *b1, const void *b2, t_size len);
 void					*ft_memchr(const void *dest, int c, t_size len);
-void					*ft_memccpy(void *dest, const void *src, int c, t_size n);
+void					*ft_memccpy(void *dest,
+						const void *src, int c, t_size n);
 void					*ft_calloc(t_size elt_count, t_size elt_size);
 void					ft_putchar_fd(char c, int fd);
 void					ft_bzero(void *dest, t_size len);
@@ -59,7 +61,8 @@ char					*ft_strtrim(char const *s1, char const *set);
 char					*ft_strmapi(char const *s, char (*f)(t_size, char));
 void					ft_lstclear(t_list **lst, void (*del)(void*));
 t_list					*ft_lstlast(t_list *lst);
-t_list					*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
+t_list					*ft_lstmap(t_list *lst,
+						void *(*f)(void *), void (*del)(void *));
 int						ft_lstsize(t_list *lst);
 void					ft_lstadd_back(t_list **lst, t_list *new);
 void					ft_lstadd_front(t_list **lst, t_list *new);

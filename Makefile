@@ -6,7 +6,7 @@
 #    By: junsekim <junsekim@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/12/26 19:03:58 by junsekim          #+#    #+#              #
-#    Updated: 2020/12/26 23:39:13 by junsekim         ###   ########.fr        #
+#    Updated: 2020/12/27 01:21:57 by junsekim         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -29,7 +29,7 @@ $(NAME) : $(OBJ)
 $(OBJ) : $(SRC)
 	$(CC) $(CFLAGS) $^
 
-bonus: all $(BONUS_OBJ)
+bonus: $(NAME) $(BONUS_OBJ)
 	ar rcs $(NAME) $(BONUS_OBJ)
 
 $(BONUS_OBJ) : $(BONUS_SRC)

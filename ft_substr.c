@@ -6,14 +6,15 @@
 /*   By: junsekim <junsekim@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/26 13:16:03 by junsekim          #+#    #+#             */
-/*   Updated: 2020/12/27 00:22:29 by junsekim         ###   ########.fr       */
+/*   Updated: 2020/12/27 02:40:25 by junsekim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 #include "libft.h"
 
-char	*ft_substr(char const *s, t_size start, t_size len)
+char	*ft_substr(char const *s, unsigned int start,
+t_size len)
 {
 	char	*ret;
 

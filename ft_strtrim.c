@@ -6,7 +6,7 @@
 /*   By: junsekim <junsekim@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/26 14:16:52 by junsekim          #+#    #+#             */
-/*   Updated: 2020/12/27 00:21:21 by junsekim         ###   ########.fr       */
+/*   Updated: 2020/12/27 02:37:06 by junsekim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,5 +34,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 			e = idx;
 		idx++;
 	}
+	if (e < s)
+		e = s;
 	return (ft_substr(s1, s, e - s));
 }

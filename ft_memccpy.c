@@ -6,7 +6,7 @@
 /*   By: junsekim <junsekim@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/25 18:35:16 by junsekim          #+#    #+#             */
-/*   Updated: 2020/12/27 00:15:45 by junsekim         ###   ########.fr       */
+/*   Updated: 2020/12/27 15:18:06 by junsekim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void	*ft_memccpy(void *dest, const void *src, int c, t_size n)
 	t_byte	*n_src;
 	t_byte	*n_dest;
 
-	n_dest = dest;
+	n_dest = (t_byte*)dest;
 	n_src = (t_byte*)src;
 	while (n--)
 	{

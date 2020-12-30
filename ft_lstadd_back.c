@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstadd_back_bonus.c                             :+:      :+:    :+:   */
+/*   ft_lstadd_back.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: junsekim <junsekim@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/26 21:45:32 by junsekim          #+#    #+#             */
-/*   Updated: 2020/12/26 21:48:33 by junsekim         ###   ########.fr       */
+/*   Updated: 2020/12/30 20:13:45 by junsekim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,8 +23,6 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 		return ;
 	}
 	while (elem->next)
-	{
 		elem = elem->next;
-	}
 	elem->next = new;
 }

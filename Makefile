@@ -6,7 +6,7 @@
 #    By: junsekim <junsekim@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/12/26 19:03:58 by junsekim          #+#    #+#              #
-#    Updated: 2020/12/27 01:36:32 by junsekim         ###   ########.fr        #
+#    Updated: 2020/12/30 20:23:34 by junsekim         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -29,8 +29,8 @@ $(NAME) : $(OBJ)
 $(OBJ) : $(SRC)
 	$(CC) $(CFLAGS) $^
 
-bonus: $(NAME) $(BONUS_OBJ)
-	ar rcs $(NAME) $(BONUS_OBJ)
+bonus: $(OBJ) $(BONUS_OBJ)
+	ar rcs $(NAME) $^
 
 $(BONUS_OBJ) : $(BONUS_SRC)
 	$(CC) $(CFLAGS) $^
@@ -44,9 +44,5 @@ clean:
 	rm -f $(OBJ) $(BONUS_OBJ)
 
 .PHONY: bonus all clean fclean re
-
-so:
-	$(CC) -fPIC $(CFLAGS) $(SRC) $(BONUS_SRC)
-	gcc -shared -o libft.so $(OBJ) $(BONUS_OBJ)
 
 

@@ -6,7 +6,7 @@
 /*   By: junsekim <junsekim@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/25 19:51:28 by junsekim          #+#    #+#             */
-/*   Updated: 2020/12/27 02:40:37 by junsekim         ###   ########.fr       */
+/*   Updated: 2020/12/31 00:11:32 by junsekim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,8 @@ int							ft_isalnum(int c);
 char						*ft_strrchr(const char *s, int c);
 char						*ft_strnstr(const char *big,
 							const char *little, t_size len);
-int							ft_strncmp(const char *s1, const char *s2, t_size len);
+int							ft_strncmp(const char *s1,
+							const char *s2, t_size len);
 t_size						ft_strlen(const char *str);
 char						**ft_split(char	const *s, char c);
 char						*ft_substr(char const *s, unsigned int start,
@@ -40,16 +41,20 @@ char						*ft_substr(char const *s, unsigned int start,
 char						*ft_itoa(int n);
 t_size						ft_strlcpy(char *restrict dest,
 							const char *restrict src, t_size dstsize);
-t_size						ft_strlcat(char *dest, const char *src, t_size size);
+t_size						ft_strlcat(char *dest,
+							const char *src, t_size size);
 char						*ft_strdup(const char *src);
 char						*ft_strchr(const char *s, int c);
 void						*ft_memset(void *dest, int c, t_size len);
 void						ft_putstr_fd(char *s, int fd);
 void						ft_putnbr_fd(int n, int fd);
 void						ft_putendl_fd(char *s, int fd);
-void						*ft_memmove(void *dest, const void *src, t_size len);
-void						*ft_memcpy(void *dest, const void *src, t_size len);
-int							ft_memcmp(const void *b1, const void *b2, t_size len);
+void						*ft_memmove(void *dest,
+							const void *src, t_size len);
+void						*ft_memcpy(void *dest,
+							const void *src, t_size len);
+int							ft_memcmp(const void *b1,
+							const void *b2, t_size len);
 void						*ft_memchr(const void *dest, int c, t_size len);
 void						*ft_memccpy(void *dest,
 							const void *src, int c, t_size n);
